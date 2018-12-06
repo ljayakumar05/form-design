@@ -1,3 +1,13 @@
 body{
     background-color: gray;
+    background-image: url(jai.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.table{
+    border: 1px solid red;
+    color: yellow;
+    text-align: center;
+    padding: 13px;
+    margin-left: 150px;
 }

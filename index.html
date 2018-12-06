@@ -3,10 +3,11 @@
     <head>
         <title>Form</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        
     </head>
     <body>
         <p style="color:red;">This is form page..</p>
-        <table border="1">
+        <table class="table">
             <tr>
                 <th>Name</th>
                 <th>AGE</th>
@@ -16,5 +17,29 @@
                 <td>26</td>
             </tr>
         </table>
+        <script type="text/javascript">
+            function myFunction(){
+                var y = document.getElementById("txt1").value;
+                var z = document.getElementById("txt2").value;
+                var x = Number(y) + Number(z);
+                document.getElementById('demo').innerHTML = x;
+            }
+        </script>
+
+            
+            <p>
+                Enter the first number
+                <input type="text" id="txt1" value="5">
+                Enter the second number
+                <input type="text" id="txt2" value="5">
+            </p>
+
+            <p>
+                    Click button to calculat x.
+                    <button onclick="myFunction()">Try it</button>
+                </p>
+
+            <p id="demo"></p>
+        
     </body>
 </html>
